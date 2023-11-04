@@ -1,0 +1,17 @@
+    {"content_scripts": [
+        {
+        "js": ["calendar.js"],
+        "matches": ["https://calendar.google.com/*"]
+        }
+    ],
+    "name": "procrast.ical",
+    "version": "1.0.0",
+    "description": "Timeblocking >",
+    "manifest_version": 3,
+    "author": "Fiona Cai",
+    "action": {
+        "default_popup": "options.html",
+        "default_title": "procrast.ical"
+    }
+    
+}

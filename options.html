@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>welcome to procrast.ical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="p-5">
+    <h1 class="text-center pb-2">welcome to procrast.ical</h1>
+    <b>Let's get you started:</b>
+    <form class="m-2 form-floating">
+        <div class="form-check">
+            <input type="color" class="form-control form-control-color form-check-input"
+                style="padding: 0%; border-radius: 100px;" id="color" value="#ABCCA3" title="Choose your color">
+            <label for="color" class="form-label">
+                Calendar's background color
+            </label>
+        </div>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="overlay" id="o1">
+                <label class="form-check-label" for="o1">
+                    Light Mode
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="overlay" id="o2">
+                <label class="form-check-label" for="o2">
+                    Dark Mode
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-check">
+            <input id="p" class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label form-label" for="p">
+                Procrastinator
+            </label>
+        </div>
+    </form>
+
+    <div id="status"></div>
+    <div class="text-center">
+        <button id="save" class="btn-lg align-self-center">Save</button>
+        <button id="reset" class="btn-lg align-self-center">Reset</button>
+    </div>
+
+
+    <script src="options.js"></script>
+</body>
+
+</html>
