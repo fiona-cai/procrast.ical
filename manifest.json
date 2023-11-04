@@ -1,17 +1,43 @@
-    {"content_scripts": [
-        {
-        "js": ["calendar.js"],
-        "matches": ["https://calendar.google.com/*"]
-        }
-    ],
+
+
+{
+    "manifest_version": 3,
     "name": "procrast.ical",
     "version": "1.0.0",
-    "description": "Timeblocking >",
-    "manifest_version": 3,
-    "author": "Fiona Cai",
+    "description": "Adds stuff to Google Calendar",
+    "icons": {
+      "128": "icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://calendar.google.com/calendar/*"
+        ],
+        "js": [
+          "content.js"
+        ],
+        "css": [
+          "style.css"
+        ]
+      }
+    ],
+    "permissions": [
+      "storage","tabs"
+    ],
+    "options_page": "options.html",
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "options.html"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+    "content_security_policy": {},
     "action": {
         "default_popup": "options.html",
         "default_title": "procrast.ical"
     }
-    
-}
+  }

@@ -5,6 +5,11 @@
 }
 
 body {
-    width: 400px;
+    width: max-content;
+    height: min-content;
 }
 
+.options {
+    display:flex;
+    flex-direction: column; 
+}

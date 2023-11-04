@@ -8,48 +8,103 @@
     <link href="index.css" rel="stylesheet">
 </head>
 
-<body class="p-5">
+<body class="m-4">
     <h1 class="text-center pb-2">welcome to procrast.ical</h1>
     <b>Let's get you started:</b>
-    <form class="m-2 form-floating">
-        <div class="form-check">
-            <input type="color" class="form-control form-control-color form-check-input"
-                style="padding: 0%; border-radius: 100px;" id="color" value="#ABCCA3" title="Choose your color">
-            <label for="color" class="form-label">
-                Calendar's background color
-            </label>
-        </div>
-        <div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="overlay" id="o1">
-                <label class="form-check-label" for="o1">
-                    Light Mode
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="overlay" id="o2">
-                <label class="form-check-label" for="o2">
-                    Dark Mode
-                </label>
-            </div>
-        </div>
-        
-        <div class="form-check">
-            <input id="p" class="form-check-input" type="checkbox" checked>
-            <label class="form-check-label form-label" for="p">
-                Procrastinator
-            </label>
-        </div>
-    </form>
 
-    <div id="status"></div>
-    <div class="text-center">
-        <button id="save" class="btn-lg align-self-center">Save</button>
-        <button id="reset" class="btn-lg align-self-center">Reset</button>
+    <div>
+        <div class="help">
+        </div>
+        <div style="display: inline-flex; width: 100%; justify-content: space-between;">
+            <div class="options" style="">
+                <span class="optionTitle col-form-label">Overlay:</span>
+                <label><input id="o1" type="radio" name="overlay">Light overlay</label>
+                <label><input id="o2" type="radio" name="overlay">Dark overlay</label>
+            </div>
+            <div class="options">
+                <span class="optionTitle col-form-label">Background:</span>
+                <label><input id="t1" type="radio" name="type">Single Image</label>
+                <label><input id="t2" type="radio" name="type">Monthly Images</label>
+                <label><input id="t3" type="radio" name="type">Color</label>
+            </div>
+        </div>
+        <div id="t1Fields">
+            <div class="field">
+                <div class="title">Image URL:</div>
+                <div class="input">
+                    <input id="url" type="url" />
+                </div>
+            </div>
+        </div>
+        <div id="t2Fields">
+            <div class="field">
+                <div class="title">January:</div>
+                <div class="input"><input id="urlMonth0" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">Februrary:</div>
+                <div class="input"><input id="urlMonth1" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">March:</div>
+                <div class="input"><input id="urlMonth2" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">April:</div>
+                <div class="input"><input id="urlMonth3" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">May:</div>
+                <div class="input"><input id="urlMonth4" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">June:</div>
+                <div class="input"><input id="urlMonth5" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">July:</div>
+                <div class="input"><input id="urlMonth6" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">August:</div>
+                <div class="input"><input id="urlMonth7" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">September:</div>
+                <div class="input"><input id="urlMonth8" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">October:</div>
+                <div class="input"><input id="urlMonth9" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">November:</div>
+                <div class="input"><input id="urlMonth10" type="url" /></div>
+            </div>
+            <div class="field">
+                <div class="title">December:</div>
+                <div class="input"><input id="urlMonth11" type="url" /></div>
+            </div>
+        </div>
+        <div id="t3Fields">
+            <div class="field">
+                <div class="title">Color:</div>
+                <div class="input">
+                    <input id="color" type="color" />
+                </div>
+            </div>
+        </div>
+        <button id="save">Save</button>
+        <button id="reset">Reset</button>
+        <div id="status"></div>
+    </div>
+    <div id="demoHolder">
+        <div id="demo">
+            <div id="sidebar"></div>
+        </div>
     </div>
 
-
-    <script src="options.js"></script>
+    <script src='options.js'></script>
 </body>
 
 </html>
