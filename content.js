@@ -37,8 +37,13 @@ function setImageStyle() {
     // Overlay:
     if (items.overlayMode == 'darkOverlay') {
       document.body.classList.add('xtnDarkOverlay');
-    } else {
+      document.body.classList.remove('xtnNoOverlay')
+    } else if (items.overlayMode == 'noOverlay') {
+        document.body.classList.add('xtnNoOverlay');
+        document.body.classList.remove('xtnDarkOverlay');
+    }else {
       document.body.classList.remove('xtnDarkOverlay');
+      document.body.classList.remove('xtnNoOverlay')
     }
   });
 }

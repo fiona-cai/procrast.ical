@@ -1,14 +1,14 @@
 /* Image elements */
 body {
-    --same-0p0: rgba(255,255,255, 0.0);
-    --same-0p1: rgba(255,255,255, 0.1);
-    --same-0p3: rgba(255,255,255, 0.3);
-    --same-0p5: rgba(255,255,255, 0.5);
+    --same-0p0: rgba(255,255,255, 0.1);
+    --same-0p1: rgba(255,255,255, 0.2);
+    --same-0p3: rgba(255,255,255, 0.4);
+    --same-0p5: rgba(255,255,255, 0.6);
     --same-0p8: rgba(255,255,255, 0.8);
-    --oppo-0p0: rgba(  0,  0,  0, 0.0);
-    --oppo-0p1: rgba(  0,  0,  0, 0.1);
-    --oppo-0p3: rgba(  0,  0,  0, 0.3);
-    --oppo-0p5: rgba(  0,  0,  0, 0.5);
+    --oppo-0p0: rgba(  0,  0,  0, 0.1);
+    --oppo-0p1: rgba(  0,  0,  0, 0.2);
+    --oppo-0p3: rgba(  0,  0,  0, 0.4);
+    --oppo-0p5: rgba(  0,  0,  0, 0.6);
     --oppo-0p8: rgba(  0,  0,  0, 0.8);
     --oppo: black;
     --same: white;
@@ -29,15 +29,30 @@ body {
     --settings-regular-text: var(--oppo-0p5);
   }
   body.xtnDarkOverlay {
-    --same-0p0: rgba(  0,  0,  0, 0.0);
-    --same-0p1: rgba(  0,  0,  0, 0.1);
-    --same-0p3: rgba(  0,  0,  0, 0.3);
-    --same-0p5: rgba(  0,  0,  0, 0.5);
+    --same-0p0: rgba(  0,  0,  0, 0.1);
+    --same-0p1: rgba(  0,  0,  0, 0.2);
+    --same-0p3: rgba(  0,  0,  0, 0.4);
+    --same-0p5: rgba(  0,  0,  0, 0.6);
     --same-0p8: rgba(  0,  0,  0, 0.8);
-    --oppo-0p0: rgba(255,255,255, 0.0);
-    --oppo-0p1: rgba(255,255,255, 0.1);
-    --oppo-0p3: rgba(255,255,255, 0.3);
-    --oppo-0p5: rgba(255,255,255, 0.5);
+    --oppo-0p0: rgba(255,255,255, 0.1);
+    --oppo-0p1: rgba(255,255,255, 0.2);
+    --oppo-0p3: rgba(255,255,255, 0.4);
+    --oppo-0p5: rgba(255,255,255, 0.6);
+    --oppo-0p8: rgba(255,255,255, 0.8);
+    --oppo: white;
+    --same: black;
+  
+  }
+  body.xtnNoOverlay {
+    --same-0p0: rgba(255, 255, 255, 0.05);
+    --same-0p1: rgba(255, 255, 255, 0);
+    --same-0p3: rgba(0, 0, 0, 0.05);
+    --same-0p5: rgba(  0,  0,  0, 0.1);
+    --same-0p8: rgba(  0,  0,  0, 0.15);
+    --oppo-0p0: rgba(255,255,255, 0.1);
+    --oppo-0p1: rgba(255,255,255, 0.2);
+    --oppo-0p3: rgba(255,255,255, 0.4);
+    --oppo-0p5: rgba(255,255,255, 0.6);
     --oppo-0p8: rgba(255,255,255, 0.8);
     --oppo: white;
     --same: black;
@@ -69,7 +84,6 @@ body {
     height: 40px;
     margin-right: 4px;
     border-radius: 20px;
-    background-color: var(--button-bg) !important;
   }
   
   /* Existing color modifications */
@@ -149,7 +163,7 @@ body {
   .YvjgZe.F262Ye:after,
   .xWId8e,
   .a0xMze  {
-    background-color: var(--same-0p1) !important;
+    background-color: var(--same-0p0) !important;
   }
   
   #gb .yR9sJd.yR9sJd:not(:disabled),
@@ -291,7 +305,6 @@ body {
   }
   
   .Xro3Db-nUpftc.ymbhmd,
-  .wWdzec,
   .Gk2izd {
     background-color: var(--same-0p8) !important;
   }
@@ -302,11 +315,7 @@ body {
   }
   
   /* Event resize grab handles. */
-  .leOeGd {
-    background-size: 100%;
-    background-image: linear-gradient(to top, var(--same-0p3), var(--same-0p0));
-  }
-  
+
   /* Day picker */
   .RDlrG {
     --minical-background: rgba(0,0,0,0.1) !important;
@@ -358,7 +367,6 @@ body {
     background-color: transparent !important;
   }
   .U26fgb {
-    background-color: var(--button-bg) !important;
     box-sizing: border-box;
   }
   

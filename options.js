@@ -31,16 +31,21 @@ async function getCurrentTab() {
 
 // Initialize overlay picker
 function loadOverlayMode(overlayMode) {
-  isDark = (overlayMode == 'darkOverlay')
-  document.getElementById('o1').checked = !isDark;
-  document.getElementById('o2').checked = isDark;
+  if (overlayMode == 'darkOverlay'){
+    isDark = 2
+  }
+  document.getElementById('o1').checked = 0;
+  document.getElementById('o2').checked = 1;
+  document.getElementById('o3').checked = 2;
 }
 
 // Read overlay mode (gets persisted on image save)
 function getOverlayMode() {
   if (document.getElementById('o2').checked) {
     return 'darkOverlay';
-  } else {
+  } else if (document.getElementById('o3').checked) {
+    return 'noOverlay';
+  }else{
     return 'lghtOverlay';
   }
 }
